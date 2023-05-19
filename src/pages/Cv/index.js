@@ -1,9 +1,10 @@
 import React from 'react'
+import { CvContainerStyles } from './styles'
 
 export const Cv = () => {
   return (
-    <main>
+    <CvContainerStyles>
       <h1>CV</h1>
-    </main>
+    </CvContainerStyles>
   )
 }

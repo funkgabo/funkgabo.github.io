@@ -1,9 +1,10 @@
 import React from 'react'
+import { HomeContainerStyles } from './styles'
 
 export const Home = () => {
     return (
-        <main>
+        <HomeContainerStyles>
             <h1>Home</h1>
-        </main>
+        </HomeContainerStyles>
     )
 }

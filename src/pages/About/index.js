@@ -1,9 +1,10 @@
 import React from 'react'
+import { AboutContainerStyles } from './styles'
 
 export const About = () => {
   return (
-    <main>
+    <AboutContainerStyles>
       <h1>About</h1>
-    </main>
+    </AboutContainerStyles>
   )
 }

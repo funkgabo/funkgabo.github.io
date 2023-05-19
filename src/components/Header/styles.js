@@ -6,7 +6,8 @@ export const HeaderStyles = styled.header`
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: #151515;
+    background: linear-gradient(180deg, rgba(79,79,79,1) 0%, rgba(51,51,51,1) 30%, rgba(24,24,24,1) 100%);
+    border-bottom: 1px solid #919191;
     div picture {
         margin:10px;
         padding:0;
