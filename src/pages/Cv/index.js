@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Cv = () => {
   return (
-    <React.Fragment>
+    <main>
       <h1>CV</h1>
-    </React.Fragment>
+    </main>
   )
 }

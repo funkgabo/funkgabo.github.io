@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Home = () => {
     return (
-        <React.Fragment>
+        <main>
             <h1>Home</h1>
-        </React.Fragment>
+        </main>
     )
 }

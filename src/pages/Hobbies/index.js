@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Hobbies = () => {
   return (
-    <React.Fragment>
+    <main>
       <h1>Hobbies</h1>
-    </React.Fragment>
+    </main>
   )
 }

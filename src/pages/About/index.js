@@ -2,8 +2,8 @@ import React from 'react'
 
 export const About = () => {
   return (
-    <React.Fragment>
+    <main>
       <h1>About</h1>
-    </React.Fragment>
+    </main>
   )
 }

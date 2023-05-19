@@ -1,20 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import { HeaderStyles } from './styles'
+import { ContactMeButton } from '../ContactMeButton'
 
 export const Header = () => {
     return (
-        <header>
+        <HeaderStyles>
             <div>
-                <h2>Gabriel Quevedo</h2>
+                <picture>
+                    <img src='images/GabrielQuevedoMin.png' />
+                </picture>
+                <div>
+                    <span><i>Gabriel Quevedo</i></span>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <Link to='/'>HOME</Link>
-                    <Link to='/cv'>CV</Link>
-                    <Link to='/about'>ABOUT ME</Link>
-                    <Link to='/hobbies'>HOBBIES</Link>
-                </ul>
-            </nav>
-        </header>
+            <div>
+                <ContactMeButton />
+            </div>
+        </HeaderStyles>
     )
 }
