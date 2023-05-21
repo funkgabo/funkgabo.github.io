@@ -14,13 +14,14 @@ export const NavBarStyles = styled.nav`
         }
         a {
             text-decoration: none;
-            color: ${props=> props.theme.colors.white2};
+            color: ${props=> props.theme.colors.white};
             transition: all .3s ease;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         &:visited{
-            color: ${props=> props.theme.colors.white2};
+            color: ${props=> props.theme.colors.white};
             }
             &:hover{
-                color: ${props=> props.theme.colors.primary};
+                color: ${props=> props.theme.colors.blue};
             }
         }
     }

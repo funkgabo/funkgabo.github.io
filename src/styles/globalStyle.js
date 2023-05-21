@@ -7,20 +7,21 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: teal;
-    font-family: Open-Sans, Helvetica, Sans-Serif;
+    background: #dbdbdb;
+    /* font-family: 'Gayathri', sans-serif; */
   }
   #root {
     max-width: 650px;
+    box-shadow: 0px 5px 23px 6px rgba(0,0,0,0.52);
+    margin: 0 auto;
   }
   main {
     margin:0;
-    min-height: calc(100vh - 238px);
+    min-height: calc(100vh - 334px);
     background-color: #1a1a1a;
   }
   section {
-    width: 100%;
-    padding: 15px 5px
+    padding: 30px 30px 45px 30px;
   }
 `;
  

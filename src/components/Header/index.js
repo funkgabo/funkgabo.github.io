@@ -9,10 +9,8 @@ export const Header = () => {
             <div>
                 <picture>
                     <img src='images/GabrielQuevedoMin.png' />
+                    <p>Gabriel Quevedo</p>
                 </picture>
-                <div>
-                    <span><i>Gabriel Quevedo</i></span>
-                </div>
             </div>
             <div>
                 <ContactMeButton />
