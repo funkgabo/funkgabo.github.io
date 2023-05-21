@@ -13,10 +13,10 @@ export const ContactMeButtonContainer = styled.div`
         width: 190px;
         outline: none;
         border: 1px solid #f1f1f1;
-        transition: .2s ease;
+        transition: .4s ease;
         &:hover{
-            color: #0CF25C;
-            border: 1px solid #0CF25C;
+            color: ${props=> props.theme.colors.yellow};
+            border: 1px solid ${props=> props.theme.colors.yellow};
         }
     }
 `

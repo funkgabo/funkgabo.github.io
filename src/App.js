@@ -6,22 +6,31 @@ import { About } from './pages/About'
 import { Cv } from './pages/Cv'
 import { Hobbies } from './pages/Hobbies'
 import { Layout } from './components/Layout'
+
 import GlobalStyle from './styles/globalStyle'
+import { ThemeProvider } from 'styled-components'
+import { COLORS } from './styles/colors'
+
+const theme = {
+    colors: COLORS,
+}
 
 export const App = () => {
     return (
         <React.Fragment>
             <GlobalStyle />
-            <Layout>
-                <main>
-                    <Routes>
-                        <Route path='/' element={<Home />} />
-                        <Route path='/cv' element={<Cv />} />
-                        <Route path='/about' element={<About />} />
-                        <Route path='/Hobbies' element={<Hobbies />} />
-                    </Routes>
-                </main>
-            </Layout>
+            <ThemeProvider theme={theme}>
+                <Layout>
+                    <main>
+                        <Routes>
+                            <Route path='/' element={<Home />} />
+                            <Route path='/cv' element={<Cv />} />
+                            <Route path='/about' element={<About />} />
+                            <Route path='/Hobbies' element={<Hobbies />} />
+                        </Routes>
+                    </main>
+                </Layout>
+            </ThemeProvider>
         </React.Fragment>
     )
 }

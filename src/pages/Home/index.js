@@ -4,7 +4,10 @@ import { HomeContainerStyles } from './styles'
 export const Home = () => {
     return (
         <HomeContainerStyles>
-            <h1>Home</h1>
+            <section>
+                <p>Frontend Developer</p>
+                <h1>"La guía correcta es el aprendizaje <span>const</span>ante"</h1>
+            </section>
         </HomeContainerStyles>
     )
 }

@@ -14,14 +14,14 @@ export const NavBarStyles = styled.nav`
         }
         a {
             text-decoration: none;
-            color: #823f8b;
+            color: ${props=> props.theme.colors.white2};
             transition: all .3s ease;
         &:visited{
-            color: #823f8b;
-        }
-        &:hover{
-            color: #c284cb;
-        }
+            color: ${props=> props.theme.colors.white2};
+            }
+            &:hover{
+                color: ${props=> props.theme.colors.primary};
+            }
         }
     }
 `
