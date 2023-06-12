@@ -6,8 +6,8 @@ export const HeaderStyles = styled.header`
     background:linear-gradient(180deg, rgba(32,31,45,1) 0%, rgba(14,13,23,1) 100%);
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: space-between;
+    flex-direction: column;
     padding: 0 30PX 20px 30PX;
     div{
         picture {
@@ -31,10 +31,23 @@ export const HeaderStyles = styled.header`
                 vertical-align: middle;
                 font-size: 30px;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                @media (max-width: 463px) {
+                    width: 180px;
+                 }
             }
         }
+        
+        @media (min-width: 443px) {
+        width: 405px;
+        height: auto;
+        text-align: end;
+      }
+      @media (max-width: 866px) {
+        width: auto;
     }
-    @media (min-width: 443px) {
+    } 
+    @media (min-width: 866px) {
     flex-direction: row;
-  }
+    width: 100%;
+    }
 `
