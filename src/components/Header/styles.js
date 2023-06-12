@@ -24,7 +24,7 @@ export const HeaderStyles = styled.header`
             p {
                 ${slideIn};
                 height: 100%;
-                color: #F09C28;
+                color: #FFA35A;
                 font-weight: 600;
                 letter-spacing: 4px;
                 text-align: center;

@@ -31,7 +31,7 @@ export const HomeSkillsStyles = styled.section`
         letter-spacing: 3px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     span {
-        color: ${props => props.theme.colors.yellow};
+        color: ${props => props.theme.colors.orangeCalm};
     }   
 }
 `
@@ -41,6 +41,7 @@ export const HomeProfileStyles = styled.section`
         background-color: ${props => props.theme.colors.blueo};
         display: flex;
         justify-content: center;
+        gap: 50px;
         picture{
             width: 50%;
             display: flex;
@@ -57,6 +58,9 @@ export const HomeProfileStyles = styled.section`
         }
         div{
             width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
             h3 {
             color: ${props => props.theme.colors.orangeCalm};
             font-weight: 200;
@@ -82,6 +86,7 @@ export const HomeProfileStyles = styled.section`
             }
             @media (max-width: 1230px) {
             width: 100%;
+            align-items: center;
             }
             @media (min-width: 1230px) {
                 padding: 0 0 0 50px;
