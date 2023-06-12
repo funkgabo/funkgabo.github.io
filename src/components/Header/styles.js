@@ -3,10 +3,13 @@ import { rotateFlipIn, slideIn } from "../../styles/animations";
 
 export const HeaderStyles = styled.header`
     width: 100%;
-    background: linear-gradient(180deg, rgba(79,79,79,1) 0%, rgba(51,51,51,1) 30%, rgba(24,24,24,1) 100%);
-    border-bottom: 1px solid #919191;
+    background:linear-gradient(180deg, rgba(32,31,45,1) 0%, rgba(14,13,23,1) 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30PX 20px 30PX;
     div{
-        width: 100%;
         picture {
             display: flex;
             justify-content: center;
@@ -25,12 +28,13 @@ export const HeaderStyles = styled.header`
                 font-weight: 600;
                 letter-spacing: 4px;
                 text-align: center;
-                margin: 9px 0 0 0;
                 vertical-align: middle;
                 font-size: 30px;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
         }
     }
-    
+    @media (min-width: 443px) {
+    flex-direction: row;
+  }
 `

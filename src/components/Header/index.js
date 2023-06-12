@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { HeaderStyles } from './styles'
-import { ContactMeButton } from '../ContactMeButton'
+import { NotFilledButton } from '../NotFilledButton'
 
 export const Header = () => {
     return (
@@ -13,7 +13,7 @@ export const Header = () => {
                 </picture>
             </div>
             <div>
-                <ContactMeButton />
+                <NotFilledButton buttonName={'CONTACT ME'} />
             </div>
         </HeaderStyles>
     )

@@ -1,0 +1,45 @@
+{
+    "jobs": [
+        {
+            "id" : "1",
+            "charge": "Tech Trainer",
+            "company": "Wisetrack Chile S.A",
+            "description": "Teach the company's clients how to use the tools of the oftware provided by Wisetrack for them. Also, I was in charge of notifying issues (QA) that had in the system."
+        },
+        {
+            "id" : "2",
+            "charge": "System Engineer",
+            "company": "Citymovil",
+            "descripcion": "Ensure the stability and operation of the transport system of different regions throughout the national territory (Chile), analyzing data from the GPS records that City Movil collected from buses as a result of the different transport companies."
+        },
+        {
+            "id" : "3",
+            "charge": "Developer VB 6.0",
+            "company": "EBQ Software",
+            "descripcion": "Develop and improve a Rent a Car software. Besides, I was responsible for solutions analysis, users training and support, holding meetings with business managers to take the best decisions for them, database management with MySQL (stored procedures, views, SQL queries, etc.) and development in Visual Basic technology."
+        },
+        {
+            "id" : "4",
+            "charge": "General Technical Support",
+            "company": "Zetalabs",
+            "descripcion": "I provided computer support that all computing layers involved, from hardware to software, equipment problems, preventive maintenance, hardware problems, server access, Active Directory management and virtual machines.  I had a direct contact with users in site, and also I was in charge of explaining users about the best practices in order to prevent issues in the future."
+        }
+    ],
+    "education": [
+        {
+            "id" : "1",
+            "date": "December 2018",
+            "title": "Computer Engineering, Universidad Tecnológica, Chile"
+        },
+        {
+            "id" : "2",
+            "December 2015": "December 2015",
+            "title": "Programmer Analyst, INACAP"
+        },
+        {
+            "id" : "3",
+            "date": "November 2012",
+            "title": "Design and Multimedia Programming, INACAP"
+        }
+    ]
+}

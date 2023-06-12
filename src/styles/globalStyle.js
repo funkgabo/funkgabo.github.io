@@ -7,11 +7,10 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: #dbdbdb;
+    background: #5b59ab;
     /* font-family: 'Gayathri', sans-serif; */
   }
   #root {
-    max-width: 650px;
     box-shadow: 0px 5px 23px 6px rgba(0,0,0,0.52);
     margin: 0 auto;
   }

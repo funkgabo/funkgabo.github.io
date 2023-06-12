@@ -2,11 +2,12 @@ import { styled, keyframes } from "styled-components";
 import { rotateFlipIn } from "../../styles/animations";
 
 export const NavBarStyles = styled.nav`
-    background-color: #151515;
+    background-color: ${props=> props.theme.colors.blueo};
     ul {
+        max-width: 1100px;
         display: flex;
         justify-content: space-evenly;
-        margin: 0;
+        margin: 0 auto;
         padding: 20px;
         li {
             ${rotateFlipIn}

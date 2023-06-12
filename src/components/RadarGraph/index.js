@@ -6,31 +6,31 @@ export const CvSkills = () => {
     const data = [
       {
         name: 'JavaScript',
-        star: 10371,
+        star: 63,
       },
       {
         name: 'CSS3',
-        star: 10300,
+        star: 66,
       },
       {
         name: 'HTML5',
-        star: 12900,
+        star: 100,
       },
       {
         name: 'SQL',
-        star: 5500,
+        star: 68,
       },
       {
         name: 'NodeJS',
-        star: 3600,
+        star: 26,
       },
       {
         name: 'MongoDB',
-        star: 4200,
+        star: 44,
       },
       {
         name: 'React',
-        star: 9600,
+        star: 76,
       },
     ];
     const config = {
