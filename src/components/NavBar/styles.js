@@ -22,7 +22,7 @@ export const NavBarStyles = styled.nav`
             color: ${props=> props.theme.colors.white};
             }
             &:hover{
-                color: ${props=> props.theme.colors.blue};
+                color: ${props=> props.theme.colors.primary};
             }
         }
     }

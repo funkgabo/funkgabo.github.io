@@ -37,3 +37,4 @@ const slideInKeyframes = keyframes`
 export const fadeIn = ({ time = '.5s', type = 'ease' } = {}) => css`animation: ${time} ${fadeInKeyframes} ${type};`
 export const rotateFlipIn = ({ time = '.5s', type = 'cubic-bezier(0.250, 0.460, 0.450, 0.940) both' } = {}) => css`animation: ${time} ${rotateFlipInKeyframes} ${type};`
 export const slideIn = ({ time = '.4s', type = 'cubic-bezier(0.250, 0.460, 0.450, 0.940) both' } = {}) => css`animation: ${time} ${slideInKeyframes} ${type};`
+

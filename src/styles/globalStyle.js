@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
   }
   main {
     margin:0;
-    min-height: calc(100vh - 318px);
+    min-height: calc(100vh - 247px);
     background-color: #1a1a1a;
   }
   section {

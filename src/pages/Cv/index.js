@@ -1,36 +1,49 @@
 import React, { useEffect, useState } from 'react'
-import { CvSectionStyles } from './styles'
+import { CvDegreesStyles } from './styles'
+
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 import CvData from '../../data/cv.json'
+import { DegreeItem } from '../../components/DegreeItem'
+import { DegreeList } from '../../components/DegreesList'
+import { DegreeCardSkeleton } from '../../components/DegreeCardSkeleton'
 
 export const Cv = () => {
-  const [cvJobs, setCvJobs] = useState(null)
-  const [cvEducation, setCvEducation] = useState(null)
-  const [data, setData] = useState(null);
+  const [degrees, setDegrees] = useState([])
+
+  const getDegrees = () => {
+    return new Promise((res) => {
+      setTimeout(() => {
+        const degrees = CvData.degrees
+        res(degrees)
+      }, 1000)
+    })
+  }
 
   useEffect(() => {
-    const fetchData = async () => {
-      const jobsData = await new Promise(resolve => {
-        setTimeout(() => {
-          resolve(CvData.jobs)
-        }, 2000)
-      })
-      setCvJobs(jobsData)
-    };
-    fetchData()
+    getDegrees()
+      .then(res => setDegrees(res))
   }, []);
 
   return (
-    <CvSectionStyles>
-      {cvJobs ? (
-        <ul>
-          {cvJobs.map(item => (
-            <li key={item.id}>{item.charge}</li>
-          ))}
-        </ul>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </CvSectionStyles>
+    <CvDegreesStyles>
+      <DegreeList>
+        {(degrees.length === 0)
+          ? <DegreeCardSkeleton cards={3} />
+          : degrees.map(item => (
+            <DegreeItem
+            key={item.id}
+            since={item.since}
+            to={item.to}
+            institution={item.institution}
+            degreeType={item.degreeType}
+            title={item.title}
+            />
+          ))
+        }
+
+      </DegreeList>
+    </CvDegreesStyles>
   );
 }

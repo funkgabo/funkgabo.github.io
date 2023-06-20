@@ -8,7 +8,7 @@ export const HeaderStyles = styled.header`
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: 0 30PX 20px 30PX;
+    padding: 0 30PX 0 30PX;
     div{
         picture {
             display: flex;

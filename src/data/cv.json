@@ -25,21 +25,30 @@
             "descripcion": "I provided computer support that all computing layers involved, from hardware to software, equipment problems, preventive maintenance, hardware problems, server access, Active Directory management and virtual machines.  I had a direct contact with users in site, and also I was in charge of explaining users about the best practices in order to prevent issues in the future."
         }
     ],
-    "education": [
+    "degrees": [
         {
             "id" : "1",
-            "date": "December 2018",
-            "title": "Computer Engineering, Universidad Tecnológica, Chile"
+            "since": "Mars 2016",
+            "to": "December 2018",
+            "title": "Computer Engineering",
+            "degreeType": "College",
+            "institution": "INACAP"
         },
         {
             "id" : "2",
-            "December 2015": "December 2015",
-            "title": "Programmer Analyst, INACAP"
+            "since": "Mars 2013",
+            "to": "December 2015",
+            "title": "Programmer Analyst",
+            "degreeType": "Technical",
+            "institution": "INACAP"
         },
         {
             "id" : "3",
-            "date": "November 2012",
-            "title": "Design and Multimedia Programming, INACAP"
+            "since": "Mars 2009",
+            "to": "November 2012",
+            "title": "Design and Multimedia Programming",
+            "degreeType": "Technical",
+            "institution": "INACAP"
         }
     ]
 }
